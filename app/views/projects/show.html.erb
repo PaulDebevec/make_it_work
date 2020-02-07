@@ -8,3 +8,9 @@
 <section id ="average-years-exp">
   <p>Average Contestant Experience: <%= @project.contestants_average_experience %></p>
 </section>
+
+<%= form_tag "/projects/#{@project.id}" do %>
+  <%= label_tag :contestant_id %>
+  <%= text_field_tag :contestant_id %>
+  <%= submit_tag "Add Contestant" %>
+<% end %>

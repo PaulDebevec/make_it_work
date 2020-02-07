@@ -15,3 +15,19 @@ recycled_material_challenge.projects.create(name: "Boardfit", material: "Cardboa
 
 furniture_challenge.projects.create(name: "Upholstery Tuxedo", material: "Couch")
 furniture_challenge.projects.create(name: "Litfit", material: "Lamp")
+
+Contestant.create!(name: "Tyrian Lanister", age: 27, hometown: "Denver", years_of_experience: 8)
+Contestant.create!(name: "Bran Stark", age: 21, hometown: "Boulder", years_of_experience: 3)
+Contestant.create!(name: "John Snow", age: 24, hometown: "Fort Collins", years_of_experience: 12)
+Contestant.create!(name: "Benjamin Stark", age: 35, hometown: "Longmont", years_of_experience: 5)
+
+contestant_1.projects << project_1
+
+contestant_2.projects << project_3
+
+contestant_3.projects << project_1
+contestant_3.projects << project_3
+
+contestant_4.projects << project_1
+contestant_4.projects << project_2
+contestant_4.projects << project_4
