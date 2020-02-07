@@ -64,7 +64,7 @@ describe "As a visitor" do
         expect(page).to have_content("Number of Contestants: 2")
       end
     end
-    
+
     it "shows the average years of experience for the contestants who worked that project" do
       challenge_1 = recycled_material_challenge = Challenge.create(theme: "Recycled Material", project_budget: 1000)
       challenge_2 = furniture_challenge = Challenge.create(theme: "Apartment Furnishings", project_budget: 1000)
@@ -79,7 +79,6 @@ describe "As a visitor" do
       contestant_4 = Contestant.create!(name: "Benjamin Stark", age: 35, hometown: "Longmont", years_of_experience: 8)
 
       contestant_1.projects << project_1
-      contestant_3.projects << project_1
       contestant_4.projects << project_1
 
 
@@ -90,12 +89,12 @@ describe "As a visitor" do
 
       visit "/projects/#{project_1.id}"
       within "#average-years-exp" do
-        expect(page).to have_content("Average Contestant Experience: 28.66")
+        expect(page).to have_content("Average Contestant Experience: 11.0")
       end
 
       visit "/projects/#{project_2.id}"
       within "#average-years-exp" do
-        expect(page).to have_content("Average Contestant Experience: 8.66")
+        expect(page).to have_content("Average Contestant Experience: 8.67")
       end
     end
   end
