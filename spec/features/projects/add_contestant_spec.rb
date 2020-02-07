@@ -1,13 +1,3 @@
-# As a visitor,
-# When I visit a project's show page
-# I see a form to add a contestant to this project
-# When I fill out a field with an existing contestants id
-# And hit "Add Contestant To Project"
-# I'm taken back to the project's show page
-# And I see that the number of contestants has increased by 1
-# And when I visit the contestants index page
-# I see that project listed under that contestant's name
-
 require 'rails_helper'
 describe "As a visitor" do
   describe "On the project show page I see a field to add a contestant to the project" do
