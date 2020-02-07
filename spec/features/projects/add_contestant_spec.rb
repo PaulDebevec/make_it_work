@@ -26,7 +26,7 @@ describe "As a visitor" do
 
       visit "/projects/#{project_2.id}"
 
-      fill_in "Contestant ID", with: contestant_1.id
+      fill_in :contestant_id, with: contestant_1.id
       click_on "Add Contestant"
 
       expect(current_path).to eq("/projects/#{project_2.id}")
