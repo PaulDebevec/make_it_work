@@ -44,7 +44,6 @@ RSpec.describe Project, type: :model do
     expect(project_2.contestant_count).to eq(2)
     expect(project_3.contestant_count).to eq(1)
     expect(project_4.contestant_count).to eq(1)
-
     end
   end
 end
